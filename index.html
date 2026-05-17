@@ -1644,30 +1644,31 @@
       }
 
       .bag-section {
-        padding: 44px 16px 80px;
+        padding: 35px 12px 70px;
       }
 
       .bag-visual {
-        min-height: 620px;
+        min-height: 520px;
       }
 
       .bag-image {
-        width: min(86%, 460px);
-        top: 66%;
+        width: 44%;
+        top: 50%;
       }
 
       .bag-item {
-        top: 66%;
+        top: 50%;
       }
 
-      .item-ticket { --size: 140px; }
-      .item-sunscreen { --size: 82px; }
-      .item-camera { --size: 132px; }
-      .item-outfit { --size: 108px; }
-      .item-Lifestyle { --size: 76px; }
+      .item-ticket { --size: 118px; }
+      .item-sunscreen { --size: 125px; }
+      .item-camera { --size: 118px; }
+      .item-outfit { --size: 125px; }
+      .item-Lifestyle { --size: 125px; }
 
       .item-label {
-        font-size: 0.92rem;
+        font-size: 1rem;
+        margin-top: 6px;
       }
 
       .trigger-sunscreen { top: 110px; }
@@ -1677,23 +1678,40 @@
       .trigger-Lifestyle    { top: 368px; }
 
       .social-section {
-        padding: 55px 16px 60px;
+        padding: 55px 18px 65px;
       }
 
       .social-heading {
-        margin-bottom: 42px;
-        font-size: 2.4rem;
+        font-size: 2.6rem;
+        line-height: 1.05;
+        margin-bottom: 35px;
       }
 
       .social-stamps {
-        grid-template-columns: 1fr;
-        gap: 22px;
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+        align-items: center;
       }
 
-      .social-stamps {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 22px;
+      .social-stamp {
+        width: 100%;
+        flex: none;
+      }
+      .social-stamp-1 img,
+      .social-stamp-2 img,
+      .social-stamp-3 img,
+      .social-stamp-4 img {
+        width: 260px;
+        transform: none !important;
+      }
+
+      .social-stamp-2 img {
+        width: 300px;
+      }
+
+      .social-stamp-3 img {
+        width: 300px;
       }
       
       .impact-section {
@@ -1704,18 +1722,20 @@
         font-size: 1rem;
       }
 
-      .impact-stamps {
-        height: 140px;
+       .impact-stamps {
+        height: 230px;
+        margin-top: 20px;
       }
 
       .impact-stamp {
-        width: 82px;
+        width: 135px;
       }
 
-      .stamp-a { top: 36px; left: 0; z-index: 4; }
-      .stamp-b { top: 10px; left: 58px; z-index: 3; }
-      .stamp-c { top: 42px; left: 118px; z-index: 2; }
-      .stamp-d { top: 6px; left: 180px; z-index: 1; }
+      .stamp-a { top: 60px; left: 5px; }
+      .stamp-b { top: 25px; left: 85px; }
+      .stamp-c { top: 95px; left: 150px; }
+      .stamp-d { top: 35px; left: 230px; }
+
 
       .impact-cards {
         grid-template-columns: 1fr;
@@ -1736,58 +1756,78 @@
         grid-column: span 1;
       }
       .contact-section {
-        padding: 56px 12px 72px;
+        padding: 42px 8px 58px;
+        overflow: hidden;
       }
 
-      .contact-left {
-        padding: 52px 22px 34px;
+      .postcard-shell {
+        max-width: 390px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
       }
 
-      .contact-title {
-        max-width: 100%;
-        font-size: 3.6rem;
+      .postcard-left-content {
+        left: 8%;
+        top: 15%;
+        width: 34%;
       }
 
-      .contact-text {
-        font-size: 1rem;
-        margin-bottom: 38px;
+      .postcard-title-left {
+        font-size: 2.2rem;
+        line-height: 0.9;
+        margin-bottom: 18px;
       }
 
-      .contact-icons {
-        gap: 16px;
+      .postcard-text-left {
+        font-size: 0.72rem;
+        line-height: 1.28;
       }
 
-      .contact-icons img {
-        width: 28px;
-        height: 28px;
+      .postcard-form-wrap {
+        left: 52%;
+        top: 18%;
+        width: 38%;
       }
 
-      .contact-right {
-        min-height: 520px;
+      .postcard-field label {
+        font-size: 0.72rem;
       }
 
-      .postcard-form {
-        top: 310px;
-        left: 50%;
-        width: 210px;
+      .postcard-input {
+        font-size: 0.68rem;
+        padding-bottom: 3px;
       }
 
-      .postcard-field input,
-      .postcard-field textarea {
-        font-size: 0.82rem;
-        padding-bottom: 6px;
+      .message-input {
+        min-height: 34px;
       }
 
-      .postcard-field textarea {
-        min-height: 52px;
+      .postcard-send-btn {
+        margin-top: 4px;
+        margin-left: 0;
+        width: 100%;
+        height: 30px;
+        font-size: 0.58rem;
+        letter-spacing: 0.08em;
       }
 
-      .postcard-submit {
-        width: 180px;
-        height: 42px;
-        font-size: 0.74rem;
-        letter-spacing: 0.12em;
+      .postcard-icons {
+        position: absolute;
+        left: 8%;
+        top: 70%;
+        gap: 12px;
       }
+
+      .postcard-icons img {
+        width: 26px;
+        height: 26px;
+      }
+
+      .postcard-fashion-icon span {
+        font-size: 0.55rem;
+      }
+
       .footer-inner {
         flex-direction: column;
         gap: 10px;
