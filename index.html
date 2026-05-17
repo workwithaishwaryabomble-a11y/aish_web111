@@ -1722,21 +1722,45 @@
         font-size: 1rem;
       }
 
-       .impact-stamps {
-        height: 230px;
+      .impact-stamps {
+        height: 240px;
         margin-top: 20px;
+        position: relative;
       }
 
       .impact-stamp {
-        width: 135px;
+        width: 170px;
+        height: auto;
+        filter: drop-shadow(0 8px 12px rgba(0,0,0,0.28));
       }
 
-      .stamp-a { top: 60px; left: 5px; }
-      .stamp-b { top: 25px; left: 85px; }
-      .stamp-c { top: 95px; left: 150px; }
-      .stamp-d { top: 35px; left: 230px; }
+      .stamp-a {
+        top: 54px;
+        left: 38px;
+        transform: rotate(-6deg);
+        z-index: 4;
+      }
 
+      .stamp-b {
+        top: 38px;
+        left: 82px;
+        transform: rotate(-8deg);
+        z-index: 3;
+      }
 
+      .stamp-c {
+        top: 60px;
+        left: 132px;
+        transform: rotate(2deg);
+        z-index: 2;
+      }
+
+      .stamp-d {
+        top: 34px;
+        left: 178px;
+        transform: rotate(-4deg);
+        z-index: 1;
+      }
       .impact-cards {
         grid-template-columns: 1fr;
       }
